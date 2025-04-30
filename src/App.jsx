@@ -24,7 +24,7 @@ function App() {
         </div>
         <div className = "row border">
           
-            <PatientEvalForm />
+            <h3>This is a website</h3>
           
         </div>
 
