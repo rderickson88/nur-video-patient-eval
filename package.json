@@ -1,8 +1,9 @@
 {
+  "homepage": "rderickson88.github.io/nur-video-patient-eval",
   "name": "nur-video-patient-eval",
   "private": true,
   "version": "0.0.1",
-  "homepage": "rderickson88.github.io/nur-video-patient-eval",
+  
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
