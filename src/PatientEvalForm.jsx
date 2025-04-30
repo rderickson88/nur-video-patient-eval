@@ -5,7 +5,15 @@ import Video from "./Video";
 
 
 function PatientEvalForm() {
-    const [video, setVideo] = React.useState("https://www.youtube.com/embed/aBE9EQ7gXKI");
+    const [video, setVideo] = React.useState({
+        src: "https://www.youtube.com/embed/aBE9EQ7gXKI",
+        title: "Patient Evaluation #1",
+        frameborder: "1",
+        allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
+        referrerpolicy: "strict-origin-when-cross-origin",
+        allowfullscreen: true
+        
+    });
     const formData = {
         patientProfile: {
             name: "", 
@@ -34,7 +42,7 @@ function PatientEvalForm() {
                         <Video videoSrc = {video}/>
                     </div>
             <div class = "col">
-                <div class = "container-fluid" style = {{height: '100%', overflowY: "auto"}}>
+                <div class = "container-fluid" style = {{height: '90vh', overflowY: "auto"}}>
                 <div class = "row">
                 <h1 className = "display-3 text-center">Patient Evaluation Form</h1>
                 </div>
@@ -82,17 +90,25 @@ function PatientEvalForm() {
                             <h5>Psychosocial Health</h5>
                         </div>
                         <div className = "col-8">
-                            <textarea class = "form-control" placeholder = "Enter Psychosocial Health" />
+                            <textarea class = "form-control" rows = "4" placeholder = "Enter Psychosocial Health" />
                         </div>
                     </div>
-                    <div className = "row">
-                        <div className = "col-4">
-                            <h5>Environment / Safety Factors</h5>
+                        <div className = "row">
+                            <div className = "col-4">
+                                <h5>Environment / Safety Factors</h5>
+                            </div>
+                            <div className = "col-8">
+                                <textarea class = "form-control" rows = "4" placeholder = "Enter any relevant Environment / Safety factors" />
+                            </div>
                         </div>
-                        <div className = "col-8">
-                            <textarea class = "form-control" placeholder = "Enter any relevant Environment / Safety factors" />
+                        <div className = "row">
+                            <div className = "col-4">
+                                <h5>Nursing Diagnoses</h5>
+                            </div>
+                            <div className = "col-8">
+                                <textarea class = "form-control" rows = "4" placeholder = "Enter Nursing Diagnoses (minimum 2)" />
+                            </div>
                         </div>
-                    </div>
                     </div>
                 </div>
                 </div>

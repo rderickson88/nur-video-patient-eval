@@ -8,14 +8,9 @@ function App() {
     <>
       <div class = "container-fluid vh-100 d-flex flex-column">
         <div className = "row p-3">
-          <h1>This is a website</h1>
+          <h1 className = "display-2">Elms Nursing Patient Eval App</h1>
         </div>
-        <div className = "row border">
-          
-            <PatientEvalForm />
-          
-        </div>
-        <div className = "row mt-4">
+        <div className = "row mt-4 mb-4 text-center">
           <div className = "col">
             <button className = "btn btn-primary" type = "button">Submit</button>
           </div>
@@ -27,6 +22,12 @@ function App() {
           </div>
          
         </div>
+        <div className = "row border">
+          
+            <PatientEvalForm />
+          
+        </div>
+
       </div>
 
     </>

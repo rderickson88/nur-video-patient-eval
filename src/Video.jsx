@@ -5,15 +5,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function Video({videoSrc}) {
     return (
         <div className="container">
-        <h1>Video</h1>
+        <h1 className = "display-3 text-center">{videoSrc.title}</h1>
         <div className = "video-container">
         <iframe 
             className = "embed" 
-            src= {videoSrc} 
-                title="Spanish Flea" 
-                frameborder="1" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" 
+            src= {videoSrc.src} 
+                title={videoSrc.title}
+                frameborder= {videoSrc.frameborder}
+                allow= {videoSrc.allow}
+                referrerpolicy={videoSrc.referrerpolicy} 
                 allowfullscreen
                 />
         </div>
