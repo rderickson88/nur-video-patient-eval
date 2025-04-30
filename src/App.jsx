@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-import Video from './Video.jsx'
+
 import PatientEvalForm from './PatientEvalForm.jsx'
 function App() {
 
@@ -24,7 +24,7 @@ function App() {
         </div>
         <div className = "row border">
           
-            <h3>This is a website</h3>
+            <PatientEvalForm />
           
         </div>
 
