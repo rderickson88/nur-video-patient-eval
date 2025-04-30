@@ -11,10 +11,8 @@ function Video({videoSrc}) {
             className = "embed" 
             src= {videoSrc.src} 
                 title={videoSrc.title}
-                frameborder= {videoSrc.frameborder}
-                allow= {videoSrc.allow}
-                referrerpolicy={videoSrc.referrerpolicy} 
                 allowfullscreen
+                width ="100%"
                 />
         </div>
         </div>
