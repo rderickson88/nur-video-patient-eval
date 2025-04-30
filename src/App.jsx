@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Video from "./Video";
+import PatientEvalForm from "./PatientEvalForm";
 
 
 function App() {
@@ -87,8 +88,8 @@ function App() {
             <div className = "col-sm-4 border border-1">
               <Video videoSrc = {currentVideo} />
             </div>
-            <div className = "col-lg-8 border border-6" style = {{height: "50vh", overflowY: "scroll"}}>
-              <h3>Eval Form will go here</h3>
+            <div className = "col-lg-8 border border-6" style = {{height: "70vh", overflowY: "scroll"}}>
+              <PatientEvalForm />
             </div>
           </div>
           
